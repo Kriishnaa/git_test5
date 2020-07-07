@@ -1,0 +1,63 @@
+git config --list
+git config --global user.name "FIRST_NAME LAST_NAME"
+
+git config --global user.email "MY_NAME@example.com"
+////////////
+git init
+git status
+git stash
+git pull
+git stash pop
+git add .
+git commit -m "message"
+git push
+////////////
+1) Clone repository in your local dir (or create a new repository):
+
+$ cd /var/www
+$ git clone git@bitbucket.org:user_name/repository_name.git
+2) Create a new branch. It will contain the latest files of your master branch repository
+
+$ git branch new_branch
+3) Change your current git branch to the new_branch
+
+$ git checkout new_branch
+4) Do coding, commits, as usual…
+
+$ git add .
+$ git commit -m “Initial commit”
+$ git push (pushes commits only to “new_branch”)
+5) When job is finished on this branch, merge with “master” branch:
+
+$ git merge master
+$ git checkout master (goes to master branch)
+$ git merge development (merges files in localhost. Master shouldn’t have any  commits ahead, otherwise there will be a need for pull and merging code by hands!)
+$ git push (pushes all “new_branch” commits to both branches - “master” and “new_branch”)
+Update: I highly recommend to use GitKraken for this to see visual tree of changes and see better all logic and commits.
+
+//////////////////
+
+https://stackoverflow.com/questions/20101994/git-pull-from-master-into-the-development-branch
+=>
+git checkout dmgr2[i.e. Branchname] # gets you "on branch dmgr2"
+git fetch origin        # gets you up to date with origin
+git merge origin/master
+
+/////////////////////////////
+REMOVE OLD GIT USER DATA 
+You can use the --unset flag of git config to do this like so:
+
+For Single user 
+git config --global --unset user.name
+git config --global --unset user.email
+If you have more variables for one config you can use:
+
+For Multiple Users : 
+git config --global --unset-all user.name
+/////////////////////////////
+
+git remote set-url origin https://github.com/Kriishnaa/test1.git
+
+///////////////////////////Other developer WIP////////////////////////////////////
+testing here
+///////////////////////////Other developer WIP////////////////////////////////////
