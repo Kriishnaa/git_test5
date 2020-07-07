@@ -1,3 +1,6 @@
+///////////////////////
+Impotant things 1 here
+////////////////////////
 git config --list
 git config --global user.name "FIRST_NAME LAST_NAME"
 
@@ -35,7 +38,9 @@ $ git merge development (merges files in localhost. Master shouldn’t have any 
 $ git push (pushes all “new_branch” commits to both branches - “master” and “new_branch”)
 Update: I highly recommend to use GitKraken for this to see visual tree of changes and see better all logic and commits.
 
-//////////////////
+///////////////////////
+Impotant things 2 here
+////////////////////////
 
 https://stackoverflow.com/questions/20101994/git-pull-from-master-into-the-development-branch
 =>
@@ -61,3 +66,7 @@ git remote set-url origin https://github.com/Kriishnaa/test1.git
 ///////////////////////////Other developer WIP////////////////////////////////////
 testing here
 ///////////////////////////Other developer WIP////////////////////////////////////
+
+///////////////////////
+Impotant things 3 here
+////////////////////////
